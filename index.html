@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Give me_art</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./main.js" defer></script>
+</head>
+
+<body>
+    <header class="page-header">
+        <nav class="navbar">
+            <a class="navbar-item">
+                <img src="./assets/icons/menu.svg" width="26" height="21" alt="Main menu icon" />
+            </a>
+            <ul class="navbar-list">
+                <li class="navbar-item">
+                    <a href="#">
+                        <img src="./assets/icons/save-red-icon-1.svg" width="32" height="30" alt="Favorite icon" />
+                    </a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#">
+                        <img src="./assets/icons/cart-icon-black-1.svg" width="37" height="25"
+                            alt="Shopping cart icon" />
+                    </a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#">
+                        <img src="./assets/icons/user-2-1.svg" width="26" height="25" alt="User icon" />
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <section class="hero-section">
+            <img class="logo" src="./assets/logos/logo.svg" alt="Logo of Give me ART" />
+            <h1 class="top-heading"><span class="red-text separate-line">Generate your ART</span> by typing in field
+                below any words
+                that comes to your mind!</h1>
+        </section>
+    </header>
+    <main>
+        <img class="progress-line" src="./assets/images/progress-line.svg" width="352" height="61"
+            alt="Progress line - step 1: Generate Image" />
+
+        <form class="query-form" action="" method="GET">
+            <div class="search-bar">
+                <input type="text" class="search-input" placeholder="What do you want to create?" />
+                <button class="btn search-btn" type="submit">
+                    <img class="search-icon" src="./assets/icons/red-icon.svg" width="54" height="48"
+                        alt="Search icon" />
+                </button>
+            </div>
+
+            <div class="option-btns">
+                <button class="btn option-btn">High Quality</button>
+                <button class="btn option-btn">Pop Art</button>
+                <button class="btn option-btn">Realistic look</button>
+            </div>
+        </form>
+
+        <div class="preview-wrapper">
+            <div class="preview-image-container">
+                <div class="preview-text">Style preview</div>
+                <button class="btn-disabled btn-arrow">
+                    <img src="./assets/icons/arrow-down-sign-to-navigate-3.svg" width="14" height="21" alt="Right arrow icon"/>
+                </button>
+                <img class="preview-image" src="./assets/images/guitar-guy.svg" width="103" height="109"
+                    alt="Generated example graphic with style applied" />
+            </div>
+            <div class="btn-scroller" aria-label="Scroll to choose the style for your graphic">
+                <button class="btn-disabled">MINIMALISTIC</button>
+                <button class="btn btn-central">CARTOON</button>
+                <button class="btn-disabled">
+                    <img src="./assets/icons/padlock-1.svg" width="14" height="14" alt="Padlock icon" />
+                    ARTISTIC
+                </button>
+            </div>
+        </div>
+
+        <div class="buy-section">
+            <h2 class="sub-heading"><span class="red-text separate-line">GET INSPIRED!</span><span class="medium-weight">BEST USERS DESIGNS</span></h2>
+            <button class="btn-plain" aria-label="Click to see more designs made by our users">
+                See More
+                <img src="./assets/icons/right-arrow-1.svg" width="15" height="15" alt="Right arrow icon" />
+            </button>
+            <img class="image" src="./assets/images/head-horns-heart.svg" width="225" height="237"
+                alt="Red head with horns surrounded by a heart - example image generated based on keywords" />
+            <div class="keywords-style-bar">
+                <div class="image-keywords">punk heart, gothic</div>
+                <div class="image-style">ARTISTIC</div>
+            </div>
+            <button class="btn btn-buy">BUY</button>
+        </div>
+    </main>
+</body>
+
+</html>
